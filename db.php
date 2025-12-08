@@ -1,12 +1,12 @@
 <?php
-$host = "localhost";
-$user = "root";
+$host = "";
+$user = "";
 $password = "";
-$database = "eam64";
+$database = "";
+
 
 $conn = new mysqli($host, $user, $password, $database);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-?>
