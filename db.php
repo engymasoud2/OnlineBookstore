@@ -1,7 +1,7 @@
 <?php
 $host = "sql1.njit.edu";
 $user = "eam64";
-$password = "Summer0100$";
+$password = "";
 $database = "eam64";
 
 
