@@ -55,7 +55,7 @@ $stmt->close();
     </div>
 
     <div style="margin-top:20px;">
-        <a href="UserDashboard.php" class="back-btn">← Back to Dashboard</a>
+        <a href="AdminDashboard.php" class="back-btn">← Back to Dashboard</a>
     </div>
 </div>
 

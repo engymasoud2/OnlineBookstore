@@ -57,11 +57,10 @@ $stmt->close();
     <div class="main-content" style="flex:3;">
         <h2>Welcome, <?php echo htmlspecialchars($firstName); ?>!</h2>
 
-        <!-- Search Bar -->
-        <div class="UserSearchBooks.php" style="margin:20px 0;">
-            <input type="text" placeholder="Search books, orders..." />
-            <button>Search Books</button>
-        </div>
+    <form action="UserSearchBooks.php" method="GET" style="display:flex; gap:10px; margin:20px 0;">
+        <input type="text" name="query" placeholder="Search books by title or ISBN..." required />
+        <button type="submit">Search Books</button>
+    </form>
 
         <!-- Dashboard Cards -->
         <div class="dashboard-cards" style="display:flex; gap:20px; flex-wrap:wrap;">
@@ -71,7 +70,7 @@ $stmt->close();
                 <p>View and edit your account details</p>
             </a>
 
-            <a href="my_orders.php" class="card">
+            <a href="UserOrders.php" class="card">
                 <div class="card-icon">📦</div>
                 <h3>My Orders</h3>
                 <p>View your past orders</p>

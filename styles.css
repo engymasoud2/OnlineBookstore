@@ -307,3 +307,42 @@ body.dashboard-page {
     background-color: #5a4bd2;
     transform: scale(1.03);
 }
+
+/* Dashboard search bar */
+.dashboard-page .main-content form input[type="text"] {
+    flex: 1;
+    min-width: 250px; 
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background:  #ffffff;
+    color: rgb(29, 0, 61);
+    box-sizing: border-box;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Status colors */
+.status-badge.shipped {
+    background-color: #3498db; /* Blue */
+}
+
+.status-badge.processing {
+    background-color: #f1c40f; /* Yellow */
+    color: #000;
+}
+
+.status-badge.delivered {
+    background-color: #2ecc71; /* Green */
+}
+
+.status-badge.cancelled {
+    background-color: #e74c3c; /* Red */
+}
