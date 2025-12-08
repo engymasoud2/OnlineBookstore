@@ -33,18 +33,22 @@ $stmt->close();
         <h3>Recommended Books</h3>
         <div class="book-card">
             <h4>The Great Gatsby</h4>
+            <h7>"Mindblowing read. Highly recommended!!"</h7>
             <p>⭐⭐⭐⭐☆</p>
         </div>
         <div class="book-card">
             <h4>1984</h4>
+            <h7>"the five stars say it all"</h7>
             <p>⭐⭐⭐⭐⭐</p>
         </div>
         <div class="book-card">
             <h4>To Kill a Mockingbird</h4>
+            <h7>"my type of read"</h7>
             <p>⭐⭐⭐⭐☆</p>
         </div>
         <div class="book-card">
             <h4>Pride and Prejudice</h4>
+            <h7>"Best words put on paper."</h7>
             <p>⭐⭐⭐⭐⭐</p>
         </div>
     </div>
@@ -54,9 +58,9 @@ $stmt->close();
         <h2>Welcome, <?php echo htmlspecialchars($firstName); ?>!</h2>
 
         <!-- Search Bar -->
-        <div class="search-bar" style="margin:20px 0;">
+        <div class="UserSearchBooks.php" style="margin:20px 0;">
             <input type="text" placeholder="Search books, orders..." />
-            <button>Search</button>
+            <button>Search Books</button>
         </div>
 
         <!-- Dashboard Cards -->
