@@ -1,0 +1,348 @@
+/* Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #8e44ad, #6c5ce7);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Login Box */
+.login-container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 320px;
+    text-align: center;
+}
+
+/* Title */
+.login-container h2 {
+    margin-bottom: 25px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+/* Buttons */
+button {
+    background-color: #6c5ce7;
+    border: none;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #5a4bd2;
+    transform: scale(1.03);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px; /* space between multiple buttons */
+    margin-right: 20px; /* pushes the buttons away from right edge */
+}
+
+
+.nav-buttons form {
+    display: inline-block;
+}
+
+.nav-buttons button {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    
+}
+
+.nav-buttons button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Push content below fixed header */
+body.dashboard-page {
+    padding-top: 70px; /* adjust if header height changes */
+}
+
+/* Dashboard container */
+.dashboard-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Cards layout */
+.dashboard-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Individual cards */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px 20px;
+    border-radius: 15px;
+    width: 220px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin: 10px 0 8px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #f0f0f0;
+}
+.signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-text a {
+    color: #ffd700; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.signup-text a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Sidebar */
+.sidebar {
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    color: white;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.book-card {
+    background: rgba(255,255,255,0.1);
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.book-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.15);
+    color: white;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #6c5ce7;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search-bar button:hover {
+    background-color: #5a4bd2;
+}
+
+/* Cards styling */
+.dashboard-cards .card {
+    flex: 1 1 220px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 25px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.dashboard-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+/* Account card */
+.account-card {
+    background: rgba(255,255,255,0.15);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    color: white;
+}
+
+/* Each row: label + value */
+.account-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.account-row:last-child {
+    border-bottom: none;
+}
+
+/* Label styling */
+.account-label {
+    font-weight: bold;
+    font-size: 16px;
+    flex: 1;
+}
+
+/* Value styling */
+.account-value {
+    flex: 2;
+    text-align: right;
+    font-size: 16px;
+}
+
+/* Back button */
+.back-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #6c5ce7;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+    background-color: #5a4bd2;
+    transform: scale(1.03);
+}
+
+/* Dashboard search bar */
+.dashboard-page .main-content form input[type="text"] {
+    flex: 1;
+    min-width: 250px; 
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background:  #ffffff;
+    color: rgb(29, 0, 61);
+    box-sizing: border-box;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Status colors */
+.status-badge.shipped {
+    background-color: #3498db; /* Blue */
+}
+
+.status-badge.processing {
+    background-color: #f1c40f; /* Yellow */
+    color: #000;
+}
+
+.status-badge.delivered {
+    background-color: #2ecc71; /* Green */
+}
+
+.status-badge.cancelled {
+    background-color: #e74c3c; /* Red */
+}

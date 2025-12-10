@@ -1,1 +1,9 @@
 brainstorm here:
+- frontend
+  
+
+
+
+
+-backend
+  add all the tables and connect
