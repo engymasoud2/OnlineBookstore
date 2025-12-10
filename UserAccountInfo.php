@@ -10,7 +10,7 @@ if (!isset($_SESSION['user_id'])) {
 // Fetch user information
 $userId = $_SESSION['user_id'];
 $stmt = $conn->prepare("SELECT FName, LName, Email, Phone, Street, ZipCode FROM Customer WHERE CustomerId = ?");
-$stmt->bind_param("i", $userId);
+$stmt->bind_param("s", $userId);
 $stmt->execute();
 $result = $stmt->get_result();
 $user = $result->fetch_assoc();

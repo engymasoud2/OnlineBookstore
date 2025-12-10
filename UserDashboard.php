@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 $userId = $_SESSION['user_id'];
 $stmt = $conn->prepare("SELECT FName, LName FROM Customer WHERE CustomerId = ?");
-$stmt->bind_param("i", $userId);
+$stmt->bind_param("s", $userId);
 $stmt->execute();
 $stmt->bind_result($firstName, $lastName);
 $stmt->fetch();

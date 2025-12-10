@@ -66,7 +66,6 @@ if ($query !== "") {
                         border-radius:8px; 
                         color:black;
                         background:white;">
-                        
                     
                     <h3><?php echo htmlspecialchars($book['Title']); ?></h3>
                     <p><strong>ISBN:</strong> <?php echo $book['ISBN']; ?></p>
@@ -74,7 +73,22 @@ if ($query !== "") {
                     <p><strong>Published:</strong> <?php echo $book['Pub_year']; ?></p>
                     <p><strong>Edition:</strong> <?php echo htmlspecialchars($book['Edition']); ?></p>
                     <p><strong>Stock:</strong> <?php echo $book['StockNum']; ?></p>
+
+                    <button onclick="window.location.href='UserPurchase.php?isbn=<?php echo $book['ISBN']; ?>&price=<?php echo $book['Price']; ?>&title=<?php echo urlencode($book['Title']); ?>'"
+
+                        style="
+                            margin-top:10px;
+                            background:green; 
+                            color:white; 
+                            padding:8px 14px; 
+                            border:none; 
+                            border-radius:5px; 
+                            cursor:pointer;">
+                        ✔ Purchase
+                    </button>
+
                 </div>
+
             <?php endforeach; ?>
         </div>
     <?php endif; ?>

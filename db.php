@@ -1,8 +1,8 @@
 <?php
-$host = "sql1.njit.edu";
-$user = "eam64";
+$host = "";
+$user = "";
 $password = "";
-$database = "eam64";
+$database = "";
 
 
 $conn = new mysqli($host, $user, $password, $database);
