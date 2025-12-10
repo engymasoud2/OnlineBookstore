@@ -1,5 +1,5 @@
 <?php
-$host = "sql1.njit.edu";
+$host = "";
 $user = "";
 $password = "";
 $database = "";
